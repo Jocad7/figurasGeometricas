@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./img/logo-head.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,13 +32,13 @@
         <section class="container--triangle-section">
             <figure class="triangle-section--triangle-img" alt="triangle img"></figure>
             <h2>Triangulo</h2>
-            <label for="triangle-textfieldA">Escribe cuanto miden los lados de tu triangulo en cm.</label>
+            <label for="triangle-textfieldA">Escribe cuanto miden los lados de tu triangulo Isosceles en cm.</label>
             <input class="triangle-field input-texfield" type="number" name="" id="triangle-textfieldA" placeholder=" Lado A">
             <input class="triangle-field input-texfield" type="number" name="" id="triangle-textfieldB" placeholder=" Lado B">
             <input class="triangle-field input-texfield" type="number" name="" id="triangle-textfieldBase" placeholder=" Base">
             <div class="triangle-section--button-container">
             <button id="tri-perimetro">Calcular perimetro</button>
-            <button id="tri-area">Calcular area</button>
+            <button id="tri-area" onclick="calcAreaTriangle()">Calcular area</button>
             </div>
             <div class="" id="triangle-result"></div>
         </section>
@@ -47,9 +48,10 @@
             <label for="circle-textfield">Escribe el radio en cm del circulo que deseas consultar</label>
             <input class="circle-field input-texfield" type="number" name="" id="circle-textfield">
             <div class="circle-section--button-container">
-                <button>Calcular perimetro</button>
-                <button>Calcular area</button>
+                <button onclick="calcPerimetroCircle()">Calcular perimetro</button>
+                <button onclick="calcAreaCircle()">Calcular area</button>
             </div>
+            <div class="" id="circle-result"></div>
         </section>
     </main>
     <script src="./figurasG.js" type="text/javascript"></script>

@@ -178,11 +178,88 @@ function perimetroTriangle()
     
     if(sideA > 0 && sideB > 0 && bse > 0)
     {
-        triangleResult.className    =   "triangle-result";
-        triangleResult.innerHTML    =   perimetroTriangulo(sideA,sideB,bse) + " CM";
+        triangleResult.className = "triangle-result";
+        triangleResult.innerHTML =  perimetroTriangulo(sideA,sideB,bse) + " CM";
     }
     else{
         triangleResult.className  = "";
         triangleResult.innerHTML = "";
     }
 };
+    //funcion altura
+const alturaT = function(ladoA, ladoB, base)
+    {
+        if(ladoA === ladoB && base != ladoA)
+        {
+           const altura = Math.sqrt(ladoA**2 - (base**2 / 4));
+           return altura;
+        }
+        else{
+            return altura  =    "No es Isosceles";
+        }
+    };
+    // Boton de calcular area
+    
+    function calcAreaTriangle(){
+    const triangleResult = 
+    document.getElementById("triangle-result");
+    const text1 = 
+    document.getElementById("triangle-textfieldA");
+    const sideA = parseInt(text1.value);
+    const text2 = 
+    document.getElementById("triangle-textfieldB");
+    const sideB = parseInt(text2.value);
+    const text3 = 
+    document.getElementById("triangle-textfieldBase");
+    const bse = parseInt(text3.value);
+
+    if(sideA === sideB && sideA > 0 && sideB > 0 && bse > 0)
+        {
+            triangleResult.className =  "triangle-result";
+            triangleResult.innerHTML = 
+            //Funcion de altura anidada a la funcion de Area.  
+            areaTriangulo(bse, alturaT(sideA, sideB, bse)).toFixed(2) + " CM²";
+        }
+        else if(sideA != sideB && bse > 0){
+            triangleResult.className =  "triangle-result";
+            triangleResult.innerHTML =  "Los lados no son congruentes";
+        }
+        else{
+            triangleResult.className  = "";
+            triangleResult.innerHTML = "";
+        }
+    };
+    //triangulo
+
+                    //circulo
+    function calcPerimetroCircle()
+        {
+        const circleText = document.getElementById("circle-textfield");
+        const circleResult = document.getElementById("circle-result");
+        const circleValue = parseInt(circleText.value);
+            
+            if(circleValue > 0)
+            {
+                circleResult.className  = "circle-result";
+                circleResult.innerHTML = perimetroCirculo(diametroCirculo(circleValue)).toFixed(2) + " CM";
+            }
+            else{
+                circleResult.className  = "";
+                circleResult.innerHTML = "";
+            }
+        };
+
+        function calcAreaCircle()
+        {
+        const circleText = document.getElementById("circle-textfield");
+        const circleResult = document.getElementById("circle-result");
+        const circleValue = parseInt(circleText.value);
+            if(circleValue > 0){
+                circleResult.className  = "circle-result";
+                circleResult.innerHTML = areaCirculo(circleValue).toFixed(2) + " CM²";
+            }
+            else{
+                circleResult.className  = "";
+                circleResult.innerHTML = "";
+            }
+        }

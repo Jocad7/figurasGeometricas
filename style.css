@@ -120,7 +120,8 @@ header{
     background-repeat: no-repeat;
 }
 .sq-result,
-.triangle-result{
+.triangle-result,
+.circle-result{
     background: #eca52c98;
     min-width: 170px;
     height: 80px;
