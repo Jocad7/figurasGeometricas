@@ -129,7 +129,7 @@ const areaTriangulo = function(base, altura){
   
 function calcPerimetro(){
     
-    const value = parseInt(input.value);
+    const value = parseFloat(input.value);
     if(value > 0){
     squareResult.className  =   "sq-result";
     squareResult.innerHTML = perimetroCuadrado(value) +" CM";
@@ -143,11 +143,11 @@ function calcPerimetro(){
 function calcArea(){
     
     const input = document.getElementById("square-textfield");
-    const value = parseInt(input.value);
+    const value = parseFloat(input.value);
     if(value > 0)
     {
     squareResult.className  =   "sq-result";
-    squareResult.innerHTML  = areaCuadrado(value) +" CM²";
+    squareResult.innerHTML  = areaCuadrado(value).toFixed(2) +" CM²";
     }
     else{
     squareResult.className  = "";
@@ -168,13 +168,13 @@ function perimetroTriangle()
     document.getElementById("triangle-result");
     const text1 = 
     document.getElementById("triangle-textfieldA");
-    const sideA = parseInt(text1.value);
+    const sideA = parseFloat(text1.value);
     const text2 = 
     document.getElementById("triangle-textfieldB");
-    const sideB = parseInt(text2.value);
+    const sideB = parseFloat(text2.value);
     const text3 = 
     document.getElementById("triangle-textfieldBase");
-    const bse = parseInt(text3.value);
+    const bse = parseFloat(text3.value);
     
     if(sideA > 0 && sideB > 0 && bse > 0)
     {
@@ -205,13 +205,13 @@ const alturaT = function(ladoA, ladoB, base)
     document.getElementById("triangle-result");
     const text1 = 
     document.getElementById("triangle-textfieldA");
-    const sideA = parseInt(text1.value);
+    const sideA = parseFloat(text1.value);
     const text2 = 
     document.getElementById("triangle-textfieldB");
-    const sideB = parseInt(text2.value);
+    const sideB = parseFloat(text2.value);
     const text3 = 
     document.getElementById("triangle-textfieldBase");
-    const bse = parseInt(text3.value);
+    const bse = parseFloat(text3.value);
 
     if(sideA === sideB && sideA > 0 && sideB > 0 && bse > 0)
         {
@@ -236,7 +236,7 @@ const alturaT = function(ladoA, ladoB, base)
         {
         const circleText = document.getElementById("circle-textfield");
         const circleResult = document.getElementById("circle-result");
-        const circleValue = parseInt(circleText.value);
+        const circleValue = parseFloat(circleText.value);
             
             if(circleValue > 0)
             {
