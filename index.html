@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <span class="logo"></span><title>Figuras geometricas</title>
+</head>
+<body>
+    <header>
+        <figure class="header--logo"></figure>
+        <h1 class="header--title">Figuras Geometricas</h1>
+    </header>
+    <main class="container">
+        <section class="container--square-section">
+            <figure class="square-section--square-img" alt="square img"></figure>
+            <h2>Cuadrado</h2>
+            <label for="square-textfield">Escribe cuanto mide en cm uno de los lados de tu cuadrado.</label>
+            <input class="square-field input-texfield" type="number" name="" id="square-textfield">
+            <div class="square-section--button-container">
+            <button id="sq-perimetro">Calcular perimetro</button>
+            <button id="sq-area">Calcular area</button>
+            </div>
+            <div class="" id="sq-result"></div>
+        </section>
+
+        <section class="container--triangle-section">
+            <figure class="triangle-section--triangle-img" alt="triangle img"></figure>
+            <h2>Triangulo</h2>
+            <label for="triangle-textfieldA">Escribe cuanto miden los lados de tu triangulo en cm.</label>
+            <input class="triangle-field input-texfield" type="number" name="" id="triangle-textfieldA" placeholder=" Lado A">
+            <input class="triangle-field input-texfield" type="number" name="" id="triangle-textfieldB" placeholder=" Lado B">
+            <input class="triangle-field input-texfield" type="number" name="" id="triangle-textfieldBase" placeholder=" Base">
+            <div class="triangle-section--button-container">
+            <button id="tri-perimetro">Calcular perimetro</button>
+            <button id="tri-area">Calcular area</button>
+            </div>
+            <div class="" id="triangle-result"></div>
+        </section>
+        <section class="container--circle-section">
+            <figure class="circle-section--square-img" alt="circle img"></figure>
+            <h2>Circulo</h2>
+            <label for="circle-textfield">Escribe el radio en cm del circulo que deseas consultar</label>
+            <input class="circle-field input-texfield" type="number" name="" id="circle-textfield">
+            <div class="circle-section--button-container">
+                <button>Calcular perimetro</button>
+                <button>Calcular area</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./figurasG.js" type="text/javascript"></script>
+</body>
+</html>
