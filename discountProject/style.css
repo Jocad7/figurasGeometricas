@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: Helvetica, sans-serif;
+    background-color: #000000;
+    color:  #fff;
+    
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #44d62c;
+    position: sticky;
+    user-select: none;
+}
+.header--logo{
+    width: 45px;
+    height: 45.16px;
+    background-image: url("./icon/razer-ths-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    margin: 40px auto;
+}
+.header--navbar{
+    display: none; 
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+.container--cardItem{
+    min-width: 540px;
+    border: 2px ridge #44d62c;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 24px;
+    border-radius: 12px;
+    align-items: center;
+    
+}
+.cardItem--img-item{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: url("./razerControl.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.cardItem--rightside{
+    display: inline-block;
+    margin-left: 15px;
+    
+}
+.rightside--title{
+    font-size: 3rem;
+    margin-bottom: 26px;
+}
+.textItem{
+    margin-top: 28px;
+    
+}
+.rightside--list li{
+    color: #999999;
+}
+.priceItem{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.rightside--couponlist{
+    height: 45px;
+    padding: 10px;
+    outline: none;
+    position: relative;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1rem;
+}
+.select-container{
+    position: relative;
+    user-select: none;
+}
+.couponTitle{
+    position: absolute;
+    top: 22px;
+    left: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 20;
+    user-select: none;
+    padding: 0 6px;
+}
+
+@media (min-width: 840px){
+    .header--logo{
+        width: 35px;
+        height: 35.16px;
+        margin: 0 0 0 40px;
+    }
+    .header--navbar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        transition: all 0.7s;
+    }
+    .header--navbar ul{
+        width: 100%;
+        padding: 20px 0px 0 0px;
+        display: flex;
+        justify-content:space-evenly;
+        list-style: none;
+        transition: all 0.7s;
+    }
+    .header--navbar li{
+        display: block;
+        padding: 0 15px 20px 0;
+        transition: all 0.7s;
+    }
+    .header--navbar a{
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: #7f7f7f;
+    }
+    .header--navbar a:hover,
+    .header--navbar a:active{
+        color: #fff;
+        transition: .5s;
+    }
+    .header--search-icon{
+        width: 20px;
+        height: 20px;
+        background-image: url("./icon/icons8-search.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 50px;
+        cursor: pointer;
+          
+    }
+    .header--cart-icon{
+        width: 24px;
+        height: 24px;
+        background-image: url("./icon/shopping-cart.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 40px;
+        cursor: pointer;
+    }
+    .container--cardItem{
+        flex-direction: row;
+    }
+    .rightside--couponlist{
+        font-size: 1.2rem;
+    }
+}

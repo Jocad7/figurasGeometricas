@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./promedio.css">
+    <title>Promedios</title>
+</head>
+<body>
+    <header>
+        <h1>Calculo de promedios</h1>
+    </header>
+    <main class="main-container">
+        <section name="media aritmetica" class="main-containner--mediaA">
+            <h2>Media Aritmetica</h2>
+            <label for="datosMedia">Introduce los datos que quieras calcular con una (,) entre cada cifra.
+                (ejm: 200,300,100)
+            </label>
+            <input type="text" name="" id="datosMedia">
+            <button class="mediaA--button" onclick="calcMediaAritmetica()">Calcular media</button>
+            <span id="result-media" class="result"></span>
+        </section>
+
+        <section name="mediana" class="main-containner--mediana">
+            <h2>Mediana</h2>
+            <label for="">Introduce los datos que quieras calcular con una (,) entre cada cifra.
+                (ejm: 200,300,100)
+            </label>
+            <input type="text" name="" id="medianaText">
+            <button class="mediaA--button" onclick="calcMediana()">Calcular mediana</button>
+            <span id="result-mediana" class="result"></span>
+        </section>
+
+        <section name="moda" class="main-containner--moda">
+            <h2>Moda</h2>
+            <label for="">Introduce los datos que quieras calcular con una (,) entre cada cifra.
+                (ejm: 200,300,100)
+            </label>
+            <input type="text" name="" id="modaText">
+            <button class="moda--button" onclick="calcModa2()">Calcular mediana</button>
+            <span id="result-moda" class="result"></span>
+        </section>
+
+        <section name="media armonica" class="main-containner--armonica">
+            <h2>Media Armonica</h2>
+            <label for="armonicaText">Introduce los datos que quieras calcular con una (,) entre cada cifra.
+                (ejm: 200,300,100)
+            </label>
+            <input type="text" name="" id="armonicaText">
+            <button class="armonica--button" onclick="mediaArmonica()">Calcular media armonica</button>
+            <span id="result-armonica" class="result"></span>
+            </section>
+    </main>
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="clone razer page for exercise">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icon/razer-ths-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Razer</title>
+</head>
+<body>
+    <header>
+        <span class="header--logo"></span>
+        <nav class="header--navbar">
+        <ul>
+            <li><a href="#">Pc</a></li>
+            <li><a href="#">Console</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Store</a></li>
+        </ul>
+        </nav>
+        <i class="header--search-icon"></i>
+        <i class="header--cart-icon"></i>
+    </header>
+    <main class="container">
+        <section class="container--cardItem">
+            <figure class="cardItem--img-item"></figure>
+            <aside class="cardItem--rightside">
+                <h2 class="rightside--title">Razer Quick Charging Stand for PS5™</h2>
+                <p class="rightside-p textItem">Quick Charging Stand for PS5™ DualSense™ Wireless Controller</p>
+                <p class="priceItem textItem">US$<span id="originalPrice">39.99</span></p>
+                <ul class="rightside--list textItem">
+                    <li>Quick Charge</li>
+                    <li>Curved Cradle Design</li>
+                    <li>Matches Your PS5™ DualSense™ Wireless Controller</li>
+                </ul>
+                <div class="select-container">
+                <span class="couponTitle">Coupons</span>
+                <select name="" class="rightside--couponlist textItem" id="coupons" oninput="aplicarDescuento()">
+                    <option value="0">No discount</option>
+                    <option value="1">15% Discount</option>
+                    <option value="2">20% Discount</option>
+                    <option value="3">30% Discount</option>
+                    <option value="4">45% Discount</option>
+                </select>
+                </div>
+                
+                
+            </aside>
+        </section>
+    </main>
+<script src="./script.js"></script> 
+</body>
+</html>

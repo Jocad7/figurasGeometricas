@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="descuentos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Descuentos en porcentajes</h1>
+    </header>
+    <main class="container">
+        <section class="container--discount-box">
+            <input type="text" name="" id="pantalla" class="container--input1 input-text" disabled placeholder="Precio final">
+            <input type="text" name="" id="rangeDiscount" class="container--input2 input-text" value="0" disabled>
+            <input type="range" min="0" max="100" value="0" name="" id="" oninput="rangeDiscount.value=value, pantalla.value= descuentoP()">
+            <span class="percentSymbol">%</span>
+            <!-- <output id="rangevalue">50</output> -->
+            <input type="text" class="container--input3 input-text" id="originalPrice" oninput="pantalla.value= descuentoP()" placeholder="Escribe el precio">
+        </section>
+
+    </main>
+    <script src="./descuentos.js" type="text/javascript">
+    </script>
+</body>
+</html>

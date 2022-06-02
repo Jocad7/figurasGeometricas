@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+header{
+    font-size: 2rem;
+    text-align: center;
+}
+.main-container{
+   display: flex;
+   margin: 50px auto; 
+   gap: 24px;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.main-containner--mediaA,
+.main-containner--mediana,
+.main-containner--moda,
+.main-containner--armonica{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 24px;
+    background-color: rgb(43, 40, 40);
+    min-width: 270px;
+    min-height: 240px;
+}
+h2{
+    color: rgb(37, 158, 63);
+}
+label{
+    color: rgb(165, 170, 170);
+    margin: 4px;
+    font-size: 1.4rem;
+}
+button{
+    margin:12px;
+    border-radius: 12px;
+    height: 40px;
+    border: none;
+    background-color:rgb(37, 158, 63);
+    color: aliceblue;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+button:hover{
+    background-color:rgb(23, 97, 39);
+}
+button:active{
+    box-shadow: 0 0 8px rgb(233, 255, 237);
+}
+.result{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 12px;
+    display: inline-block;
+}

@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family:'Caveat', cursive;
+}
+header{
+    text-align: center;
+    margin: 70px;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.container--discount-box{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: rgb(76, 87, 79);
+    border-radius: 40px;
+    padding: 60px 0;
+    box-shadow: 13px 13px 15px -5px rgba(0,0,0,0.75);
+}
+.input-text{
+    margin: 20px;
+}
+.container--input1{
+    width: 200px;
+    height: 80px;
+    border-radius: 30px;
+    border: none;
+    background: #fff;
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+.container--input1::placeholder,
+.container--input3::placeholder{
+    font-size: medium;
+    color: rgb(180, 184, 184);
+    font-family:'Caveat', cursive;
+}
+.container--input2{
+    position: absolute;
+    top: 105px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(96, 199, 130);
+    outline: none;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(37deg);
+    padding: 4px;
+}
+.percentSymbol{
+    /* background-color: #fff; */
+    /* border: 1px solid rgb(96, 199, 130); */
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    font-weight: bolder;
+    padding: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: rotate(37deg);
+    position: absolute;
+    top: 45%;
+    right: 65px;
+}
+.container--input3{
+    height: 40px;
+    width: 180px;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
